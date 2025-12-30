@@ -1,0 +1,128 @@
+:root{
+    --dark-square-color: rgb(105, 31, 31);
+    --light-square-color: bisque;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.chessboard{
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    margin: 2% auto;
+    border: 10px solid var(--dark-square-color);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .row{
+        width: 100%;
+        aspect-ratio: 8 / 1;
+
+        .square {
+            float: left;
+            clear: none;
+            width: 12.5%;
+            aspect-ratio: 1 / 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            > div{
+                display: flex;
+                padding: 1px;
+            }
+
+            .column-label{
+                width: 100%;
+                display: flex;
+                text-align: right;
+            }
+        }
+    }
+
+    .row:nth-child(even){
+        .square:nth-child(even){
+            background-color: var(--dark-square-color);
+            > div{
+                color: var(--light-square-color);
+            }
+        }
+        .square:nth-child(odd){
+            background-color: var(--light-square-color);
+            > div{
+                color: var(--dark-square-color);
+            }
+        }
+    }
+
+    .row:nth-child(odd){
+        .square:nth-child(even){
+            background-color: var(--light-square-color);
+            > div{
+                color: var(--dark-square-color);
+            }
+        }
+        .square:nth-child(odd){
+            background-color: var(--dark-square-color);
+            > div{
+                color: var(--light-square-color);
+            }
+        }
+    }
+
+    .white-pawn{
+        background-image: url('assets/white-pawn.svg');
+    }
+
+    .white-knight{
+        background-image: url('assets/white-knight.svg');
+    }
+
+    .white-bishop{
+        background-image: url('assets/white-bishop.svg');
+    }
+
+    .white-rook{
+        background-image: url('assets/white-rook.svg');
+    }
+
+    .white-queen{
+        background-image: url('assets/white-queen.svg');
+    }
+
+    .white-king{
+        background-image: url('assets/white-king.svg');
+    }
+
+    .black-pawn{
+        background-image: url('assets/black-pawn.svg');
+    }
+
+    .black-knight{
+        background-image: url('assets/black-knight.svg');
+    }
+
+    .black-bishop{
+        background-image: url('assets/black-bishop.svg');
+    }
+
+    .black-rook{
+        background-image: url('assets/black-rook.svg');
+    }
+
+    .black-queen{
+        background-image: url('assets/black-queen.svg');
+    }
+
+    .black-king{
+        background-image: url('assets/black-king.svg');
+    }
+
+}
+
