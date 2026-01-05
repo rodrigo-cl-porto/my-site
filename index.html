@@ -1,125 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <title>My chessboard</title>
+    <title>Universo Offshore</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link href="style.css" rel="stylesheet" />
+    <!--
+        <script src="script.js"></script>
+    -->
 </head>
 <body>
-    <script src="script.js"></script>
-    <div class="chessboard">
-        <div class="row" id="row1">
-            <div class="square white-rook" id="A1">
-                <div class="row-label">1</div>
-                <div class="column-label">a</div>
-            </div>
-            <div class="square white-knight" id="B1">
-                <div class="column-label">b</div>
-            </div>
-            <div class="square white-bishop" id="C1">
-                <div class="column-label">c</div>
-            </div>
-            <div class="square white-queen" id="D1">
-                <div class="column-label">d</div>
-            </div>
-            <div class="square white-king" id="E1">
-                <div class="column-label">e</div>
-            </div>
-            <div class="square white-bishop" id="F1">
-                <div class="column-label">f</div>
-            </div>
-            <div class="square white-knight" id="G1">
-                <div class="column-label">g</div>
-            </div>
-            <div class="square white-rook" id="H1">
-                <div class="column-label">h</div>
-            </div>
-        </div>
-        <div class="row" id="row2">
-            <div class="square white-pawn" id="A2">
-                <div class="row-label">2</div>
-            </div>
-            <div class="square white-pawn" id="B2"></div>
-            <div class="square white-pawn" id="C2"></div>
-            <div class="square white-pawn" id="D2"></div>
-            <div class="square white-pawn" id="E2"></div>
-            <div class="square white-pawn" id="F2"></div>
-            <div class="square white-pawn" id="G2"></div>
-            <div class="square white-pawn" id="H2"></div>
-        </div>
-        <div class="row" id="row3">
-            <div class="square" id="A3">
-                <div class="row-label">3</div>
-            </div>
-            <div class="square" id="B3"></div>
-            <div class="square" id="C3"></div>
-            <div class="square" id="D3"></div>
-            <div class="square" id="E3"></div>
-            <div class="square" id="F3"></div>
-            <div class="square" id="G3"></div>
-            <div class="square" id="H3"></div>
-        </div>
-        <div class="row" id="row4">
-            <div class="square" id="A4">
-                <div class="row-label">4</div>
-            </div>
-            <div class="square" id="B4"></div>
-            <div class="square" id="C4"></div>
-            <div class="square" id="D4"></div>
-            <div class="square" id="E4"></div>
-            <div class="square" id="F4"></div>
-            <div class="square" id="G4"></div>
-            <div class="square" id="H4"></div>
-        </div>
-        <div class="row" id="row5">
-            <div class="square" id="A5">
-                <div class="row-label">5</div>
-            </div>
-            <div class="square" id="B5"></div>
-            <div class="square" id="C5"></div>
-            <div class="square" id="D5"></div>
-            <div class="square" id="E5"></div>
-            <div class="square" id="F5"></div>
-            <div class="square" id="G5"></div>
-            <div class="square" id="H5"></div>
-        </div>
-        <div class="row" id="row6">
-            <div class="square" id="A6">
-                <div class="row-label">6</div>
-            </div>
-            <div class="square" id="B6"></div>
-            <div class="square" id="C6"></div>
-            <div class="square" id="D6"></div>
-            <div class="square" id="E6"></div>
-            <div class="square" id="F6"></div>
-            <div class="square" id="G6"></div>
-            <div class="square" id="H6"></div>
-        </div>
-        <div class="row" id="row7">
-            <div class="square black-pawn" id="A7">
-                <div class="row-label">7</div>
-            </div>
-            <div class="square black-pawn" id="B7"></div>
-            <div class="square black-pawn" id="C7"></div>
-            <div class="square black-pawn" id="D7"></div>
-            <div class="square black-pawn" id="E7"></div>
-            <div class="square black-pawn" id="F7"></div>
-            <div class="square black-pawn" id="G7"></div>
-            <div class="square black-pawn" id="H7"></div>
-        </div>
-        <div class="row" id="row8">
-            <div class="square black-rook" id="A8">
-                <div class="row-label">8</div>
-            </div>
-            <div class="square black-knight" id="B8"></div>
-            <div class="square black-bishop" id="C8"></div>
-            <div class="square black-queen" id="D8"></div>
-            <div class="square black-king" id="E8"></div>
-            <div class="square black-bishop" id="F8"></div>
-            <div class="square black-knight" id="G8"></div>
-            <div class="square black-rook" id="H8"></div>
-        </div>
+
+    <header>
+        <ul>
+            <li>Título</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </header>
+
+    <div class="content">
+
+        <nav>
+            <h1>Universo Offshore</h1>
+            <ul class="offshore-resources">
+                <li>
+                    <h2>Recursos Offshore</h2>
+                    <ul>
+                        <li><a href="#plsv">PLSV</a></li>
+                        <li><a href="#manifold">Manifold</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="manifold" hidden>
+                <h1>Manifold</h1>
+                <p><em>Pipeline End Manifold</em></p>
+                <p>É um tipo de equipamento submarino para ligação de linhas de produção.</p>
+            </section>
+
+            <section id="plsv">
+                <h1>PLSV</h1>
+                <p><em>Pipe-Laying Support Vessel</em></p>
+                <p>Embarcação de Suporte para Instalação de Linhas</p>
+            </section>
+        </main>
+
     </div>
+
+    <footer>
+
+    </footer>
+    
 </body>
 </html>
