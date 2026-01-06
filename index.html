@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <title>Universo Offshore</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Universo Offshore</title>
+    <meta name="description" content="A description of the page">
     <link href="style.css" rel="stylesheet" />
-    <!--
-        <script src="script.js"></script>
-    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!--<script src="script.js"></script>-->
 </head>
 <body>
 
@@ -23,12 +26,22 @@
 
         <nav>
             <h1>Universo Offshore</h1>
-            <ul class="offshore-resources">
-                <li>
+            <ul>
+                <li id="operations">
+                    <h2>Operações</h2>
+                    <ul>
+                        <li><a href="cvd-1">CVD de 1ª</a></li>
+                        <li><a href="cvd-2">CVD de 2ª</a></li>
+                        <li><a href="pull-in-1">Pull-In de 1ª</a></li>
+                        <li><a href="pull-in-2">Pull-In de 2ª</a></li>
+                    </ul>
+                </li>
+                <li id="offshore-resources">
                     <h2>Recursos Offshore</h2>
                     <ul>
-                        <li><a href="#plsv">PLSV</a></li>
                         <li><a href="#manifold">Manifold</a></li>
+                        <li><a href="#plet">PLET</a></li>
+                        <li><a href="#plsv">PLSV</a></li>
                     </ul>
                 </li>
             </ul>
@@ -41,6 +54,11 @@
                 <p>É um tipo de equipamento submarino para ligação de linhas de produção.</p>
             </section>
 
+            <section id="plet" hidden>
+                <h1>PLET</h1>
+                <p><em>Pipeline End Terminator</em></p>
+            </section>
+
             <section id="plsv">
                 <h1>PLSV</h1>
                 <p><em>Pipe-Laying Support Vessel</em></p>
@@ -51,7 +69,7 @@
     </div>
 
     <footer>
-
+        <p>Todos os direitos reservados 2026 &copy;</p>
     </footer>
     
 </body>
